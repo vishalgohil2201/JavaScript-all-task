@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Captcha Code</title>
+
+	<style type="text/css">
+		.captcha-part {
+			background-color: lightgray;
+			display: inline-block;
+			width: 165px;
+			margin-bottom: 20px;
+			padding: 5px;
+		}
+
+		.captcha-code {
+			border: none;
+			background-color: transparent;
+			height: 50px;
+			font-size: 26px;
+			width: 100%;
+		}
+
+		.captcha-code:focus {
+			outline: none;
+		}
+
+		.refresh-icon {
+			background-color: transparent;
+			border: none;
+			cursor: pointer;
+		}
+
+		.enter-captcha {
+			margin-bottom: 15px;
+		}
+
+		input {
+			display: block;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="captcha-part">
+		<input type="text" class="captcha-code" readonly id="captcha-code-id">
+		<button class="refresh-icon"> <img src="refresh-icon.png" width="40px" onclick="refresh()"></button>
+	</div>
+
+	<input type="text" id="enter_captcha-id" class="enter-captcha" placeholder="Enter captcha code">
+	<input type="button" value="Submit" onclick="check()">
+
+	<script src="js/script.js"></script>
+
+</body>
+
+</html>

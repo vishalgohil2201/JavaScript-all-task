@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator</title>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+
+	<section>
+		<div class="main">
+			<div class="box">
+				<div class="input-part">
+					<input type="text" placeholder="0" id="display">
+				</div>
+
+				<div class="btn-part">
+			
+					<div class="row btn-row-1">
+						<div class="col"><input type="button" value="AC" class="btn-design bg-lightgray" onclick="clearAll()"></div>
+						<div class="col"><input type="button" value="C" class="btn-design bg-lightgray" onclick="clearOne()"></div>
+						<div class="col"><input type="button" value="%" class="btn-design bg-lightgray" onclick="sign('%')"></div>
+						<div class="col"><input type="button" value="/" class="btn-design bg-orange" onclick="sign('/')"></div>
+					</div>
+
+					<div class="row btn-row-1">
+						<div class="col"><input type="button" value="7" class="btn-design bg-darkgray" onclick="calc(this.value)"></div>
+						<div class="col"><input type="button" value="8" class="btn-design bg-darkgray" onclick="calc(this.value)"></div>
+						<div class="col"><input type="button" value="9" class="btn-design bg-darkgray" onclick="calc(this.value)"></div>
+						<div class="col"><input type="button" value="X" class="btn-design bg-orange" onclick="sign('X')"></div>
+					</div>
+
+					<div class="row btn-row-1">
+						<div class="col"><input type="button" value="4" class="btn-design bg-darkgray" onclick="calc(this.value)"></div>
+						<div class="col"><input type="button" value="5" class="btn-design bg-darkgray" onclick="calc(this.value)"></div>
+						<div class="col"><input type="button" value="6" class="btn-design bg-darkgray" onclick="calc(this.value)"></div>
+						<div class="col"><input type="button" value="-" class="btn-design bg-orange" onclick="sign('-')"></div>
+					</div>
+
+					<div class="row btn-row-1">
+						<div class="col"><input type="button" value="1" class="btn-design bg-darkgray" onclick="calc(this.value)"></div>
+						<div class="col"><input type="button" value="2" class="btn-design bg-darkgray" onclick="calc(this.value)"></div>
+						<div class="col"><input type="button" value="3" class="btn-design bg-darkgray" onclick="calc(this.value)"></div>
+						<div class="col"><input type="button" value="+" class="btn-design bg-orange" onclick="sign('+')"></div>
+					</div>
+
+					<div class="row btn-row-1">
+						<div class="col-6"><input type="button" value="0" class="btn-h-rectangle bg-darkgray" onclick="calc(this.value)"></div>
+						<div class="col"><input type="button" value="." class="btn-design bg-darkgray" onclick="calc(this.value)"></div>
+						<div class="col"><input type="button" value="=" class="btn-design bg-orange" onclick="ans()"></div>
+					</div>
+					
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+
+
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/script.js"></script>
+
+</body>
+</html>

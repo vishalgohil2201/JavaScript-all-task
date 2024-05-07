@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Number Puzzle</title>
+
+	<style type="text/css">
+		.heading {
+			text-align: center;
+		}
+
+		.heading h3 {
+			font-size: 30px;
+			font-family: calibri;
+		}
+
+		.main-box {
+			width: 300px;
+			height: 300px;
+			display: flex;
+			flex-wrap: wrap;
+			margin: auto;
+		}
+
+		.main-box .btn {
+			width: 100px;
+			height: 100px;
+			font-size: 30px;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<div class="heading">
+		<h3>Number Puzzle</h3>
+	</div>
+
+	<div class="main-box">
+		<input type="button" value="" class="btn" id="a1" onclick="game1(this.value)">
+		<input type="button" value="2" class="btn" id="a2" onclick="game2(this.value)">
+		<input type="button" value="6" class="btn" id="a3" onclick="game3(this.value)">
+		<input type="button" value="4" class="btn" id="a4" onclick="game4(this.value)">
+		<input type="button" value="3" class="btn" id="a5" onclick="game5(this.value)">
+		<input type="button" value="7" class="btn" id="a6" onclick="game6(this.value)">
+		<input type="button" value="1" class="btn" id="a7" onclick="game7(this.value)">
+		<input type="button" value="5" class="btn" id="a8" onclick="game8(this.value)">
+		<input type="button" value="8" class="btn" id="a9" onclick="game9(this.value)">
+	</div>
+
+	<div class="heading" style="margin-top: 20px;">
+		<button onclick="reset()">Restart</button>
+	</div>
+
+	<script src="js/script.js"></script>
+
+</body>
+
+</html>

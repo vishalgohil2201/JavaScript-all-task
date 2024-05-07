@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tic Tac Toe</title>
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			font-family: calibri;
+		}
+
+		.text-center {
+			text-align: center;
+		}
+
+		.heading {
+			margin-bottom: 30px;
+		}
+
+		.heading h3 {
+			margin: 10px 0;
+			font-size: 45px;
+		}
+
+		.heading h4 {
+			margin: 15px 0;
+			font-size: 22px;
+		}
+
+
+		.reset-btn {
+			margin: 15px 0;
+			padding: 10px 15px;
+			background-color: transparent;
+			border: 2px solid rgb(7, 7, 83);
+			border-radius: 5px;
+			font-size: 18px;
+			box-shadow: 0 0 5px rgb(147, 145, 145);
+			transition: 0.2s;
+		}
+
+		.reset-btn:focus {
+			background-color: rgb(146, 225, 252);
+		}
+
+		.box {
+			width: 390px;
+			height: 390px;
+			display: flex;
+			flex-wrap: wrap;
+			margin: auto;
+		}
+
+		.box .btn {
+			height: 130px;
+			width: 130px;
+			font-size: 50px;
+			background-color: black;
+			color: white;
+			border: 1px solid white;
+			font-weight: bold;
+		}
+
+		.result-btn {
+			margin-top: 30px;
+			font-size: 30px;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<div class="heading text-center">
+		<h3 class="mt-4">TIC TAC TOE</h3>
+		<h4>First Player Start is X and Second Player is O</h4>
+		<input class="reset-btn" type="Button" value="Restart" onclick="reset()"></input>
+	</div>
+
+	<div class="box">
+
+		<input type="button" class="btn" id="a1" onclick="getData(1)">
+		<input type="button" class="btn" id="a2" onclick="getData(2)">
+		<input type="button" class="btn" id="a3" onclick="getData(3)">
+		<input type="button" class="btn" id="a4" onclick="getData(4)">
+		<input type="button" class="btn" id="a5" onclick="getData(5)">
+		<input type="button" class="btn" id="a6" onclick="getData(6)">
+		<input type="button" class="btn" id="a7" onclick="getData(7)">
+		<input type="button" class="btn" id="a8" onclick="getData(8)">
+		<input type="button" class="btn" id="a9" onclick="getData(9)">
+
+	</div>
+
+	<div class="text-center">
+		<h5 class="result-btn" id="result"></h5>
+	</div>
+
+	<script src="js/script.js"></script>
+
+</body>
+
+</html>

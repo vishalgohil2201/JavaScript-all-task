@@ -1,0 +1,73 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #F5EBDC;
+}
+
+.box {
+	border-radius: 10px;
+	background-color: white;
+	margin: 10px;
+	box-shadow: 0 0 10px lightgrey;
+}
+
+.box img {
+	width: 30%;
+	display: block;
+	border-radius: 10px 0 0 10px;
+}
+
+.details-box {
+	padding: 20px;
+}
+
+.details-box h4 {
+	font-size: 20px;
+	font-family: calibri;
+	font-weight: bolder;
+	margin-bottom: 0;
+}
+
+.details-box p {
+	margin-bottom: 0px;
+}
+
+/*--------------------------*/
+
+.details-box .price-and-btn {
+	margin-top: 15px;
+}
+
+.price-and-btn h5 {
+	font-size: 20px;
+	margin-bottom: 0 !important;
+}
+
+.details-box .price-and-btn .btn {
+	border: 1px solid #EE7700;
+	background-color: transparent;
+	border-radius: 35px;
+	padding: 4px 18px;
+	text-align: center;
+	color: #EE7700;
+	font-weight: bolder;
+}
+
+.calc-box {
+	background-color: white;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.calc-box h5 {
+	font-size: 18px;
+	margin: 0;
+}
+
+.calc-box .result:focus {
+	outline: none;
+}

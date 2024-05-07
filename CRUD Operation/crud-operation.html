@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Operation</title>
+   
+   <style>
+        .task-name {
+            display: inline-block;
+            width: 40px;
+        }
+
+        #tbdy {
+            margin-top: 15px;
+            display: block;
+        }
+    </style>
+</head>
+
+
+<body>
+    <table align="center">
+        <caption>CRUD Operation</caption>
+        <tr>
+            <td>
+                <input type="text" placeholder="enter task.." id="input-id">
+            </td>
+            <td>
+                <button onclick="addTask()">Add Task</button>
+            </td>
+        </tr>
+        <tbody id="tbdy"></tbody>
+    </table>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

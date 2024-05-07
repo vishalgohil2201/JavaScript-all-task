@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bulb On/Off</title>
+
+	<style type="text/css">
+		.btn-design {
+			padding: 10px 15px;
+			background: #e2e2e2;
+			width: 60px;
+			height: 40px;
+			box-shadow: 4px 4px 4px 0 rgba(46, 61, 73, 0.13);
+			border-radius: 5px;
+			margin-top: 15px;
+		}
+	</style>
+
+</head>
+
+<body>
+	<div style="width:200px">
+		<img src="off-bulb.jpeg" width="100%" id="bulb">
+	</div>
+
+	<input type="button" value="ON" id="bulb-button" onclick="changeImg()" class="btn-design">
+
+	<script type="text/javascript">
+		let temp = 1;
+
+		function changeImg() {
+			temp = (temp == 1) ? 0 : 1;
+			document.getElementById('bulb').src = (temp == 0) ? "on-bulb.png" : "off-bulb.jpeg";
+			document.getElementById('bulb-button').value = (temp == 0) ? 'OFF' : 'ON';
+		}
+
+	</script>
+
+</body>
+
+</html>

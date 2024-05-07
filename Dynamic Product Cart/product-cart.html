@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Product Cart</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="logo text-center">
+        <img src="images/logo.png" alt="" width="140px">
+    </div>
+
+    <div class="container">
+        <h3>BEST SELLERS</h3>
+
+        <div class="main-box">
+            <div class="inner-box">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="box d-flex">
+                            <img src="images/1.jpg" alt="">
+                            <div class="details-box">
+                                <h4>VEG WHOPPER</h4>
+                                <p>Thick Paneer Patty, loads sauces in soft square masala buns.</p>
+                                <div class="price-and-btn d-flex justify-content-between">
+                                    <h5 class="d-flex">₹<p id="a1">129</p>/-</h5>
+                                    <input type="button" value="ADD +" class="btn" onclick="added(1)">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="box d-flex">
+                            <img src="images/3.jpg" alt="">
+                            <div class="details-box">
+                                <h4>PANEER ROYALE BURGGER</h4>
+                                <p>Thick Paneer Patty, loads sauces in soft square masala buns.</p>
+                                <div class="price-and-btn d-flex justify-content-between">
+                                    <h5 class="d-flex">₹<p id="a2">149</p>/-</h5>
+                                    <input type="button" value="ADD +" class="btn" onclick="added(2)">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="box d-flex">
+                            <img src="images/2.jpg" alt="">
+                            <div class="details-box">
+                                <h4>CHICKEN WHOPPER</h4>
+                                <p>Thick Paneer Patty, loads sauces in soft square masala buns.</p>
+                                <div class="price-and-btn d-flex justify-content-between">
+                                    <h5 class="d-flex">₹<p id="a3">189</p>/-</h5>
+                                    <input type="button" value="ADD +" class="btn" onclick="added(3)">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="box d-flex">
+                            <img src="images/4.jpg" alt="">
+                            <div class="details-box">
+                                <h4>FIERY CHICKEN BURGER</h4>
+                                <p>Thick Paneer Patty, loads sauces in soft square masala buns.</p>
+                                <div class="price-and-btn d-flex justify-content-between">
+                                    <h5 class="d-flex">₹<p id="a4">219</p>/-</h5>
+                                    <input type="button" value="ADD +" class="btn" onclick="added(4)">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="box d-flex">
+                            <img src="images/1.jpg" alt="">
+                            <div class="details-box">
+                                <h4>CRIPSY VEG BURGER</h4>
+                                <p>Thick Paneer Patty, loads sauces in soft square masala buns.</p>
+                                <div class="price-and-btn d-flex justify-content-between">
+                                    <h5 class="d-flex">₹<p id="a5">229</p>/-</h5>
+                                    <input type="button" value="ADD +" class="btn" onclick="added(5)">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="box d-flex">
+                            <img src="images/3.jpg" alt="">
+                            <div class="details-box">
+                                <h4>PANEER ROYALE WRAP</h4>
+                                <p>Thick Paneer Patty, loads sauces in soft square masala buns.</p>
+                                <div class="price-and-btn d-flex justify-content-between">
+                                    <h5 class="d-flex">₹<p id="a6">239</p>/-</h5>
+                                    <input type="button" value="ADD +" class="btn" onclick="added(6)">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="calculation d-flex justify-content-end">
+            <div class="col-6">
+                <div class="calc-box text-center">
+                    <div class="row">
+
+                        <div class="col-4">
+                            <h5>Price (₹)</h5>
+                            <input type="text" id="price" readonly class="w-100 border-0 text-center result"
+                                placeholder="0">
+                        </div>
+                        <div class="col-4">
+                            <h5>Discount(20%)</h5>
+                            <input type="text" id="discount" readonly class="w-100 border-0 text-center result"
+                                placeholder="0">
+                        </div>
+                        <div class="col-4">
+                            <h5>Total Amount (₹)</h5>
+                            <input type="text" id="total-amount" readonly class="w-100 border-0 text-center result"
+                                placeholder="0">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

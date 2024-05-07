@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Stop Watch</title>
+	<style type="text/css">
+		.main-box {
+			display: flex;
+			justify-content: center;
+			text-align: center;
+		}
+
+		h3 {
+			font-size: 100px;
+			margin-top: 20px;
+			margin: 0;
+		}
+
+		.text-box {
+			display: flex;
+		}
+
+		.btn-part {
+			margin-top: 20px;
+		}
+
+		.btn-part .btn {
+			background-color: transparent;
+			padding: 5px 0;
+			border-radius: 5px;
+			margin: 0 10px;
+			font-size: 20px;
+			width: 100px;
+			border: 1px solid gray;
+			transition: 0.3s;
+		}
+
+		.btn-part .btn:hover {
+			background-color: orange;
+			color: white;
+		}
+	</style>
+</head>
+
+<body>
+
+
+	<div class="main-box">
+		<div class="inner-box">
+
+			<div class="text-box">
+				<h3 id="hour-zero"></h3>
+				<h3 id="hour"></h3>
+				<h3 id="">:</h3>
+				<h3 id="minute-zero"></h3>
+				<h3 id="minute"></h3>
+				<h3 id="">:</h3>
+				<h3 id="second-zero"></h3>
+				<h3 id="second"></h3>
+			</div>
+
+
+			<div class="btn-part">
+				<input type="button" value="Start" class="btn" onclick="start_btn()">
+				<input type="button" value="Stop" class="btn" onclick="stop_btn()">
+				<input type="button" value="Restart" class="btn" onclick="restart_btn()">
+			</div>
+
+		</div>
+	</div>
+
+	<script src="js/script.js"></script>
+
+</body>
+
+</html>

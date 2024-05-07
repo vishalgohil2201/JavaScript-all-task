@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Traffic Light</title>
+
+     <style>
+          .main-box {
+               margin: auto;
+               background-color: black;
+               width: 100px;
+               display: block;
+               border-radius: 30px;
+               padding: 10px 8px;
+          }
+
+          .inner-box {
+               width: 72px;
+               border-radius: 30px;
+               margin: auto;
+          }
+
+          .box {
+               border-radius: 50%;
+               width: 72px;
+               height: 72px;
+               margin: 10px 0;
+          }
+
+          .pipe {
+               height: 200px;
+               width: 18px;
+               margin: auto;
+               background-color: black;
+               border-radius: 0px 0 10px 10px;
+          }
+     </style>
+</head>
+
+<body>
+     <div class="main-box">
+          <div class="inner-box">
+               <div class="box red" id="red-id"></div>
+               <div class="box yellow" id="yellow-id"></div>
+               <div class="box green" id="green-id"></div>
+          </div>
+     </div>
+
+     <div class="pipe"></div>
+
+     <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form Validation</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<style>
+		td {
+			padding: 10px;
+		}
+
+		label {
+			margin-right: 7px;
+		}
+
+		.btn {
+			border: 1px solid black;
+			padding: 5px 7px;
+			background-color: rgb(223, 228, 234);
+			border-radius: 3px;
+		}
+	</style>
+</head>
+
+<body>
+	<form onsubmit="return frm()">
+		<div class="row w-100 my-3">
+			<div class="col">
+				<h2 class="text-center">Form Validation</h2>
+			</div>
+		</div>
+		<table width="50%" style="margin: 0px auto;" cellspacing="0">
+			<tr>
+				<td>Username: </td>
+				<td>
+					<input type="text" class="form-control" placeholder="Enter username" id="un">
+				</td>
+			</tr>
+
+			<tr>
+				<td>Password: </td>
+				<td>
+					<input type="password" class="form-control" placeholder="Enter password" id="pw">
+				</td>
+			</tr>
+			<tr>
+				<td>Confirm Password: </td>
+				<td>
+					<input type="password" class="form-control" placeholder="Enter confirm password" id="cpw">
+				</td>
+			</tr>
+
+			<tr>
+				<td>Gender: </td>
+				<td>
+					<input type="radio" name="gen" id="male" class="form-check-input">
+					<label for="male">Male</label>
+					<input type="radio" name="gen" id="female" class="form-check-input">
+					<label for="female">Female</label>
+				</td>
+			</tr>
+
+			<tr>
+				<td>City: </td>
+				<td>
+					<select id="city" class="form-select">
+						<option value="">Select your city</option>
+						<option value="surat">Surat</option>
+						<option value="rajkot">Rajkot</option>
+						<option value="valsad">Valsad</option>
+						<option value="vadodara">Vadodara</option>
+						<option value="ahemdabad">Ahmedabad</option>
+					</select>
+
+				</td>
+			</tr>
+
+			<tr>
+				<td>Hobby: </td>
+				<td>
+					<input type="checkbox" name="hby" class="form-check-input">
+					<label class="form-check-label">Cricket</label>
+					<input type="checkbox" name="hby" class="form-check-input">
+					<label class="form-check-label">Writting</label>
+					<input type="checkbox" name="hby" class="form-check-input">
+					<label class="form-check-label">Travelling</label>
+					<input type="checkbox" name="hby" class="form-check-input">
+					<label class="form-check-label">Speaking</label>
+					<input type="checkbox" name="hby" class="form-check-input">
+					<label class="form-check-label">Reading</label>
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="2" style="text-align: center;">
+					<input type="submit" name="Submit" class="btn">
+					<input type="reset" name="Reset" class="btn">
+				</td>
+			</tr>
+
+		</table>
+	</form>
+
+	<script src="js/bootstrap.bundle.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
